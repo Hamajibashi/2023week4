@@ -1,4 +1,44 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+footer {
+  img {
+      width: 48px;
+      height: 48px;
+
+      @include pad {
+          width: 40px;
+          height: 40px;
+      }
+
+      @include mobile {
+          width: 24px;
+          height: 24px;
+      }
+  }
+
+  span {
+      margin-right: 22px;
+  }
+
+  .contact {
+      font-size: 36px;
+
+      @include pad {
+          font-size: 16px;
+      }
+  }
+
+  .border {
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+  }
+
+  .material-icons-outlined {
+      font-size: 48px;
+
+      @include pad {
+          font-size: 24px;
+      }
+  }
+
+  @include opacity;
 }

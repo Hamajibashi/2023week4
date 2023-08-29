@@ -1,3 +1,102 @@
-.index-title {
-  font-size: 100px;
+.banner {
+  height: 787px;
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header.png');
+  @include background-img;
+
+  @include pad {
+      background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/home-header-sm.png');
+  }
+
+  .btn {
+      border-radius: 0;
+      width: fit-content;
+      font-size: 20px;
+  }
+}
+
+.features {
+  span {
+      font-size: 100px;
+  }
+
+  .card {
+      background: transparent;
+      border: 0;
+  }
+}
+
+.classic {
+  h3 {
+      font-size: 48px;
+  }
+
+  @include opacity;
+}
+
+.collaboration {
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg.png');
+  min-height: 608px;
+  @include background-img;
+
+  @include pad {
+      background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-md.png');
+      min-height: 960px;
+  }
+
+  @include mobile {
+      background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week3-4/index-bg-sm.png');
+      min-height: 820px;
+  }
+
+  h3 {
+      font-size: 48px;
+  }
+
+  @include opacity;
+
+  .row>* {
+      padding-left: 0;
+      padding-right: 0;
+  }
+}
+
+.recommend {
+  .card {
+      box-shadow: 0px 2px 6px #00000029;
+      transition: all 0.3s;
+
+      &:hover {
+          transform: translateY(-8px);
+      }
+
+      time {
+          font-size: 14px;
+      }
+  }
+}
+
+.contact {
+  .wrap {
+      max-width: 636px;
+      margin: 0 auto;
+  }
+
+  input,
+  textarea {
+      background-color: #FBF2F2;
+      padding: 6px 12px;
+      border: 1px solid #000;
+  }
+
+  input[type="checkbox"] {
+      width: 24px;
+      height: 24px;
+      border: 1px solid #000;
+  }
+
+  button {
+      width: 416px;
+      padding: 16px 0;
+      border-radius: 0;
+  }
 }

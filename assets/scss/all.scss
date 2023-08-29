@@ -1,5 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:ital,wght@1,700&display=swap');
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "./helpers/mixin";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+h2 {
+    font-size: 48px;
+
+    @include mobile {
+        font-size: 24px;
+    }
+}
+
+h3 {
+    font-size: 36px;
+
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
-
 @import './pages/index.scss';
+@import './pages/faqs.scss';
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.border-left {
+    padding-left: 16px;
+    border-left: 8px solid #9F1213;
+}
