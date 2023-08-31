@@ -1,0 +1,36 @@
+h3 {
+    font-size: 32px;
+
+    @include pad {
+        font-size: 24px;
+    }
+}
+
+.category {
+    font-size: 20px;
+    @include opacity;
+}
+
+.search {
+    font-size: 40px;
+}
+
+.row {
+    @include opacity;
+}
+
+.more {
+    font-size: 36px;
+}
+
+.pagination {
+
+    .page-link {
+        color: #000;
+
+        &:hover {
+            color: #fff;
+            background-color: #000;
+        }
+    }
+}
